@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.edu.rp.c346.project03_v1.Play">
+
+    <ImageView
+        android:id="@+id/playerOneQn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/qn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/randombig" />
+
+    <ImageView
+        android:id="@+id/playerTwoQn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/qn"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/randombig" />
+
+    <ImageButton
+        android:id="@+id/playerTwoAns2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ans"
+        android:foreground="@drawable/button_correct"
+        android:rotation="180"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerTwoAns4"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/playerTwoAns4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ans"
+        android:foreground="@drawable/button_correct"
+        android:rotation="180"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/playerTwoAns3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ans"
+        android:foreground="@drawable/button_correct"
+        android:rotation="180"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/playerTwoAns1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ans"
+        android:foreground="@drawable/button_correct"
+        android:rotation="180"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerTwoAns3"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/playerOneAns1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/ans"
+        android:foreground="@drawable/button_correct"
+        app:layout_constraintBottom_toTopOf="@+id/playerOneAns3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/playerOneAns4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/ans"
+        android:foreground="@drawable/button_correct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/playerOneAns3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/ans"
+        android:foreground="@drawable/button_correct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/playerOneAns2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="0dp"
+        android:contentDescription="@string/ans"
+        android:foreground="@drawable/button_correct"
+        app:layout_constraintBottom_toTopOf="@+id/playerOneAns4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/timerTV"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintLeft_toRightOf="@+id/playerOneQn"
+        app:layout_constraintRight_toLeftOf="@+id/playerTwoQn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/playerTwoLock"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/lock"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lockin"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <ImageButton
+        android:id="@+id/playerOneLock"
+        android:layout_width="182dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/lock"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/lockin" />
+
+    <ImageView
+        android:id="@+id/chosenAnsP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/Pans"
+        android:rotation="180"
+        app:layout_constraintLeft_toRightOf="@+id/playerTwoAns2"
+        app:layout_constraintRight_toLeftOf="@+id/playerTwoAns1"
+        app:layout_constraintTop_toBottomOf="@+id/playerTwoLock"
+        app:srcCompat="@drawable/random" />
+
+    <ImageView
+        android:id="@+id/chosenAnsP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/Pans"
+        app:layout_constraintBottom_toTopOf="@+id/playerOneLock"
+        app:layout_constraintLeft_toRightOf="@+id/playerOneAns1"
+        app:layout_constraintRight_toLeftOf="@+id/playerOneAns2"
+        app:srcCompat="@drawable/random" />
+
+    <TextView
+        android:id="@+id/player2Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:rotation="180"
+        android:text="@string/points"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTimer"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toRightOf="@+id/playerOneQn"
+        app:layout_constraintRight_toLeftOf="@+id/playerTwoQn" />
+
+    <TextView
+        android:id="@+id/player1Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/points"
+        android:textColor="@android:color/black"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toRightOf="@+id/playerOneQn"
+        app:layout_constraintRight_toLeftOf="@+id/playerTwoQn"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimer" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="127dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/play"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1Points"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:rotation="180"
+        android:text="@string/chosen"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toRightOf="@+id/playerTwoAns2"
+        app:layout_constraintRight_toLeftOf="@+id/playerTwoAns1"
+        app:layout_constraintTop_toBottomOf="@+id/chosenAnsP2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/chosen"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/chosenAnsP1"
+        app:layout_constraintLeft_toRightOf="@+id/playerOneAns1"
+        app:layout_constraintRight_toLeftOf="@+id/playerOneAns2" />
+
+</android.support.constraint.ConstraintLayout>

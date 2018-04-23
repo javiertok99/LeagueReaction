@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Project03_v1</string>
+    <!-- Menu Strings -->
+    <string name="title">2 Player Reactor</string>
+    <string name="buttonPlay">Play</string>
+    <string name="buttonHow">How To Play</string>
+    <string name="buttonAnswers">Answers</string>
+    <string name="timerTV">Timer</string>
+    <string name="points">0 Points</string>
+    <!-- Game Menu Strings -->
+    <string name="qn">Question</string>
+    <string name="ans">Answer</string>
+    <string name="start">Start</string>
+    <string name="lock">Lock</string>
+    <string name="Pans">Player Answer</string>
+
+    <!-- Play.java Strings -->
+    <string name="p1win">P1 Wins!</string>
+    <string name="p2win">P2 Wins!</string>
+    <string name="draw">Draw!</string>
+    <string name="timesUp">Time\'s Up!</string>
+    <string name="chosen">Your Answer</string>
+</resources>
+
